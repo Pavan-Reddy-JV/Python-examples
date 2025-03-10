@@ -2,3 +2,32 @@ Principal,Rate,Time = map(int,input().split())
 sum = Principal * Rate * Time
 total = sum // 100
 print("the total sum",total)
+
+
+#####Swap numbers####
+t = int(input())
+for _ in range(t):
+  a, b = map(int, input().split()) # Indented this line by 4 spaces
+  print("the sum of",a,"and",b,"is:",a + b )
+
+
+#####Condition stmts#####
+str=input()
+if str.islower():
+  print(str.upper())
+elif str.isupper():
+  print("It is correct") 
+else :
+  print(str.swapcase())
+
+####example:2 we can use or stmt
+str=input()
+if str.islower() or str.isdigit():
+    print(str.isdecimal())
+
+######example:3 odd and even numbers
+a = int(input())
+if a % 2 ==0:
+  print("even")
+else:
+  print("odd")
