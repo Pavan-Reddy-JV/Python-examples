@@ -1,0 +1,4 @@
+Principal,Rate,Time = map(int,input().split())
+sum = Principal * Rate * Time
+total = sum // 100
+print("the total sum",total)
