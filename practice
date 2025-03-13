@@ -106,3 +106,37 @@ print(celsius)
 Celsius = int(input())
 Fahren = (celsius * 9 / 5) + 32
 print(Fahren)
+
+######example:12  sumof even & odd numbers by using strings
+a = input()
+even =0
+odd =0
+for i in a:
+  if int(i) % 2 == 0:
+      even = even + int(i)
+  else:
+    odd = odd + int(i)
+print(even,odd)
+
+#####with the integer
+a = int(input("enter the number"))
+even =0
+odd =0
+for i in range(a):
+  if i % 2 == 0:
+      even = even + i
+  else:
+    odd = odd + i
+print("the sum of even is:",even,"the sum of odd is:",odd)
+
+
+
+#########String types#########
+a = 'pavan'
+print(a[-1])
+
+te = input('please enter the name ')
+print("welcome {},are you doing good?".format(te))
+
+word = 'p a v a n'
+print(word.split( ))
