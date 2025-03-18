@@ -140,3 +140,68 @@ print("welcome {},are you doing good?".format(te))
 
 word = 'p a v a n'
 print(word.split( ))
+
+##Counter function
+from typing import Counter
+str = input()
+k = str.split()
+print(Counter(k))
+
+#######LISTS & Tuples
+d = [2,3,4.5,'pavan']--->lists(ordering,mutable,indexing,allows duplicate)##{insert,append,extend}----> this are attributes for the list
+e = (2,3,4.5,'pavan')---->tuples(ordering,not-mutable,indexing,allows duplicate)
+#d[3] = 'reddy'---->Indexing
+print(d[1:3])----->slice
+
+######SETS & Dictonaries
+fruit ={'1','apple','banana','cherry'}--->sets(not-ordering,mutable,not-indexing,duplication is not allowed)
+print(fruit)
+###Add attribute
+fruit.add('orange')
+print(fruit)
+###remove attribute
+fruit.remove('banana')
+print(fruit)
+###membership
+print('banana' not in fruit )
+
+#####Dictonaries example####
+student = {'name' :input(),'age' : input(),'grade' : input()}---->(ordering after 3.7,mutable,indexing,duplication is not allowed)
+if student['grade'] == 'A':
+  print("Outstanding perfromer",student)
+else :
+  print("Average",student)
+print(student)
+
+Adding
+student ['course']= ['Math','Science']
+
+for key,value in student.items():
+  print(key,value)
+
+d1 ={"marks":90,"grade":"A"}
+d2 ={"marks":80,"grade":"B"}
+d1.get("marks") > d2.get("marks")
+
+
+
+#####functions######
+def test(name):
+  print(f"Hi,{name}")
+test("pavan")
+
+
+def app(a):
+  print(f"Hello Guys {a}")
+app("pavan")
+
+
+def exa(name):
+
+  """
+  This for the printing the name
+  """
+  print(f"Hi,{name}")
+print(exa.__doc__)
+
+output:: This for the printing the name
