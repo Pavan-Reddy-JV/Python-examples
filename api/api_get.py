@@ -1,11 +1,12 @@
 import requests
+import json
 
 header = {
     'Accept':'text/plain',
     'content_type' : 'application/json'
 }
-
-response = requests.get("https://google.com")
+url = "https://facebee.free.beeceptor.com/todos"
+response = requests.get(url,headers=header)
 
 print(response.status_code)
-print(response.json())
+print(json.dumps(response.json, indent=4))
