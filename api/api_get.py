@@ -9,4 +9,4 @@ url = "https://facebee.free.beeceptor.com/todos"
 response = requests.get(url,headers=header)
 
 print(response.status_code)
-print(json.dumps(response.json, indent=4))
+#print(json.dumps(response.json, indent=4))
